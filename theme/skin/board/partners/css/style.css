@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+#bo_wrap {position: relative; margin: -20px 0; }
+#bo_wrap .required { background: none !important; }
+#bo_wrap img { max-width: 100%; }
+
+/* 에디터 도움말 숨기기 */
+#bo_wrap .cke_sc { display: none; } 
+
+/* 게시판 목록 공통 */
+.bo_fx {margin-bottom:20px;zoom:1}
+.bo_fx:after {display:block;visibility:hidden;clear:both;content:""}
+.bo_fx ul {margin:0;padding:0;list-style:none}
+#bo_list_total {float:left;padding-top:5px}
+.btn_bo_user {float:right;margin:0;padding:0;list-style:none}
+.btn_bo_user li {float:left;margin-left:5px}
+
+/* 게시판 페이징 */
+.pg_start, .pg_end { display: none; }
+.pg_current { margin: 0; background-color: #e8180c;}
+
+/* 게시판 레이아웃 */
+.line-x { margin-top: 20px; padding-top: 20px; background: url(../img/line.png) repeat-x; }
+.line-y { background: url(../img/line.png) repeat-y; }
+
+#bo_w_head { padding: 20px 0; background: url(../img/line.png) left bottom repeat-x; }
+#bo_w_cont { overflow: hidden; position: relative; padding: 20px 0; }
+
+#bo_head { position: relative; overflow: hidden; margin-bottom: 20px; padding-top: 20px; background: url(../img/line.png) left bottom repeat-x; }
+#bo_head h2 { margin-bottom: 10px; font-size: 50px; font-weight: bold; text-align: center; }
+
+#bo_head ul { white-space: nowrap; text-align: center; height: 42px; display: table; margin: 0 auto;}
+#bo_head li { display: inline-block; zoom: 1; *display: inline; _display: inline; /* IE 6-7 */}
+#bo_head li + li { margin-left: 18px; padding-left: 28px; background: url(../img/slash.png) left center no-repeat; }
+#bo_head li a { position: relative; display: inline-block; padding: 0 10px; font-weight: bold; color: #666; line-height: 42px;
+  -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out; }
+
+#bo_head li a.on { height: 39px; border-bottom: 3px solid #fff; color: #fff;  }
+#bo_head li a:hover { color: #fff; }
+
+#bo_cont { overflow: hidden; margin-bottom: 20px; }
+#bo_cont ul { position: relative; margin: -4px; overflow: hidden; }
+#bo_cont li { float: left; position: relative; width: 12.5%; }
+#bo_cont li > div { position: relative; overflow: hidden; display: block; margin: 4px; border: 1px solid #666; cursor: pointer; }
+#bo_cont li .image { position: relative; display: block; padding-bottom: 100%; height: 0; }
+#bo_cont li .image img { position: absolute; left: 0; top: 0; width: 100%; opacity: 0; filter: alpha(opacity=0); zoom: 1; }
+#bo_cont li .btn { position: absolute; left: 0; right: 0; bottom: -40px; background: url(../img/b50.png); text-align: center; }
+#bo_cont li .btn a { padding: 10px; display: inline-block; zoom: 1; *display: inline; _display: inline; /* IE 6-7 */; color: #fff }
+#bo_cont li.empty_list { padding: 100px 0 !important; width: 100% !important; font-size: 14px; color: #999; }
+
+
+
+/* write  */
+.bo_meta { margin-bottom: 20px; }
+.bo_meta li { display: block; *display: inline-block; _display: inline-block; position: relative; }
+.bo_meta li + li { margin-top: 20px; }
+.bo_meta li strong { display: block; margin-bottom: 10px; padding-left: 12px; background: url(../img/dot.png) 0 3px no-repeat; }
+
+.bo_file li { display: block; *display: inline-block; _display: inline-block; position: relative; }
+.bo_file li + li { margin-top: 20px; }
+.bo_file li strong { display: block; margin-bottom: 10px; padding-left: 12px; background: url(../img/dot.png) 0 3px no-repeat; }
+.bo_file li p .frm_input { width: 100%;  }
+.bo_file li p .del { display: block; margin-top: 10px; }
+
+
+.bo_write input { padding: 10px 0; width: 100%; background-color: #000; border: none; font-family: 'gotham bold'; font-size: 20px; color: #fff; cursor: pointer; }
+
+
+.input_wrapper { display: block; padding: 10px; background-color: #fff; border: 1px solid #b5b5b5  }
+.input_wrapper > input { width: 100%; outline: none; border: 0; }
+
+
+@media screen and (max-width:900px) {
+	#bo_head { margin: 0 -20px 20px; }
+	#bo_head nav { position: relative; overflow: hidden; }
+	#bo_head nav::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0px; z-index: 99; display: block; width: 20px;
+	background: -webkit-gradient(linear,left top,right top,color-stop(0,#333),color-stop(100%,rgba(255,255,255,0)));
+	}
+	#bo_head nav::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0px; z-index: 99; display: block; width: 20px;
+	background: -webkit-gradient(linear,left top,right top,color-stop(0,rgba(255,255,255,0)),color-stop(100%,#333));
+	}
+
+	#bo_head ul { padding: 0 20px; }
+	#bo_cont li { width: 20%; }
+}
+
+@media screen and (max-width:700px) {
+	#bo_cont li { width: 33.33333333%; }
+}
