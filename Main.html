@@ -47,7 +47,7 @@
 
 <body class="css3">
 
-    <div id="wrap" class="fix">
+    <div id="wrap">
 
         <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
 
@@ -97,24 +97,24 @@
 
 
                     <div id="swipe">
-                        <div class="panel" style="display: block;">
-                            <div class="img-bg" data-src="" style="background-image: url(&quot;./img/1.jpg&quot;);"></div>
+                        <div class="panel">
+                            <div class="img-bg" data-src="./img/1.jpg"></div>
                             <div class="rgb-bg" style="background-color: #252774"></div>
                         </div>
-                        <div class="panel" style="display: none;">
-                            <div class="img-bg" data-src="" style="background-image: url(&quot;./img/2.jpg&quot;);"></div>
+                        <div class="panel">
+                            <div class="img-bg" data-src="./img/2.jpg"></div>
                             <div class="rgb-bg" style="background-color: #a3620a"></div>
                         </div>
-                        <div class="panel" style="display: none;">
-                            <div class="img-bg" data-src="" style="background-image: url(&quot;./img/3.jpg&quot;);"></div>
+                        <div class="panel">
+                            <div class="img-bg" data-src="./img/3.jpg"></div>
                             <div class="rgb-bg" style="background-color: #252774"></div>
                         </div>
-                        <div class="panel" style="display: none;">
-                            <div class="img-bg" data-src="" style="background-image: url(&quot;./img/4.png&quot;);"></div>
+                        <div class="panel">
+                            <div class="img-bg" data-src="./img/4.png"></div>
                             <div class="rgb-bg" style="background-color: #252774"></div>
                         </div>
-                        <div class="panel" style="display: none;">
-                            <div class="img-bg" data-src="" style="background-image: url(&quot;./img/5.png&quot;);"></div>
+                        <div class="panel">
+                            <div class="img-bg" data-src="./img/5.png" style="background-image: url(&quot;img/5.png&quot;);"></div>
                             <div class="rgb-bg" style="background-color: #9e0b0f"></div>
                         </div>
                     </div>
@@ -122,23 +122,23 @@
                     <div id="swipe-main">
                         <div class="wrapper">
                             <div id="swipe-info">
-                                <div class="panel" style="display: block;">
+                                <div class="panel">
                                     <h2><a href="#">EVERLAND : Horror Club</a></h2>
                                     <p>2015.10.02 - 2015.10.31</p>
                                 </div>
-                                <div class="panel" style="display: none;">
+                                <div class="panel">
                                     <h2><a href="#">2016 HEINEKEN STARDIUM</a></h2>
                                     <p>2016.07.09</p>
                                 </div>
-                                <div class="panel" style="display: none;">
+                                <div class="panel">
                                     <h2><a href="#">CASS BLUE PLAYGROUND 2016</a></h2>
                                     <p>2016.08.20</p>
                                 </div>
-                                <div class="panel" style="display: none;">
+                                <div class="panel">
                                     <h2><a href="#">SAMSUNG Gear S2</a></h2>
                                     <p>2015.10.31</p>
                                 </div>
-                                <div class="panel" style="display: none;">
+                                <div class="panel">
                                     <h2><a href="#">CORONA SUNSETS YANGYANG</a></h2>
                                     <p>2016.08.27</p>
                                 </div>
@@ -158,11 +158,11 @@
                             <div id="swipe-controls">
                                 <div class="swipe-wrapper">
                                     <div class="swipe-pagination">
-                                        <span class="on"></span>
-                                        <span class=""></span>
-                                        <span class=""></span>
-                                        <span class=""></span>
-                                        <span class=""></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
                                     </div>
                                     <div class="swipe-direction">
                                         <span class="swipe-direction-prev">&lt;</span>
@@ -175,10 +175,7 @@
 
                     <script>
                         $(function () {
-                            var SwipeView = $('#swipe').SwipeView({
-                                duration: 800,
-                                delay: 1600
-                            });
+                            var SwipeView = $('#swipe').SwipeView({duration: 800,delay: 1600});
 
                         });
                     </script>
